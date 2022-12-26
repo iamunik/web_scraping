@@ -3,7 +3,7 @@
 
 ## 1. books.toscrape.com
 
-I scrapped the site <b>(books.toscrape.com)</b> using selenium, this code give the user the ability to select the number of pages they want to scrape from the website, after the user specifies the number of pages they need then the code begins the scrapping using selenium, then after the scrapping is complete the system prompts the user to type in a name they would want to use to save their already scrapped data, once the user specifies a filename it saves it using that specified name as a csv file to the path where the project itself is. <b>Name of project (booksToScrape.py)</b>
+I scrapped the site <b>(www.books.toscrape.com)</b> using selenium, this code give the user the ability to select the number of pages they want to scrape from the website, after the user specifies the number of pages they need then the code begins the scrapping using selenium, then after the scrapping is complete the system prompts the user to type in a name they would want to use to save their already scrapped data, once the user specifies a filename it saves it using that specified name as a csv file to the path where the project itself is. <b>Name of project (booksToScrape.py)</b>
 
 ## Tools and libraries used in this project
 <ul>
@@ -18,7 +18,7 @@ I scrapped the site <b>(books.toscrape.com)</b> using selenium, this code give t
 
 <b>----------------------------------------------------------------------------------------</b>
 ## 2. quotes.toscrape.com
-I scrapped the site <b>(quotes.toscrape.com)</b> using selenium, this code give the user the ability to select the number of quotes they want to scrape from the website, after the user specifies the number of quotes they want then, the code begins getting the quotes and other necessary items data using selenium ,then after the scrapping is complete the system prompts the user to type in a name they would want to use to save their already scrapped data, once the user specifies a filename it saves it using that specified name as a csv file to the path where the project itself is. <b>Name of project (quotesToScrape.py)</b>
+I scrapped the site <b>(www.quotes.toscrape.com)</b> using selenium, this code give the user the ability to select the number of quotes they want to scrape from the website, after the user specifies the number of quotes they want then, the code begins getting the quotes and other necessary items data using selenium ,then after the scrapping is complete the system prompts the user to type in a name they would want to use to save their already scrapped data, once the user specifies a filename it saves it using that specified name as a csv file to the path where the project itself is. <b>Name of project (quotesToScrape.py)</b>
 
 ## Tools and libraries used in this project
 <ul>
