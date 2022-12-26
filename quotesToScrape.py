@@ -24,7 +24,7 @@ description = []
 location = []
 
 c_p = 1
-while c_p != 3:
+while c_p != quotes_no:
     for i in driver.find_elements(By.CLASS_NAME, 'text'):
         quotes.append(i.text)
     for i in driver.find_elements(By.LINK_TEXT, '(about)'):
