@@ -33,7 +33,7 @@ I scrapped the site <b>(www.quotes.toscrape.com)</b> using selenium, this code g
 
 <b>----------------------------------------------------------------------------------------</b>
 ## 3. scrapethissite.com/pages/forms
-I scrapped this site <b>(www.scrapethissite.com/pages/forms/)</b> this site contains details about hockey teams from 1990 to 2011, using selenium I scrapped this site, this projects is in two phases, the first phase scrapes entire table on all the webpages on this particular website (24 webpages in total) and displays the data after scraping, while the second phase of the project allows user search for a particular hockey team on the site and then it scrapes the table and details about that hockey team and display it also on screen. <b>Name of project (hockeySCrape.py)
+I scrapped this site <b>(www.scrapethissite.com/pages/forms/)</b> this site contains details about hockey teams from 1990 to 2011, using selenium I scrapped this site, this projects is in two phases, the first phase scrapes entire table on all the webpages on this particular website (24 webpages in total) and displays the data after scraping, while the second phase of the project allows user search for a particular hockey team on the site and then it scrapes the table and details about that hockey team and display it also on screen. <b>Name of project (hockeyScrape.py)
 
 ## Tools and libraries used in this project
 <ul>
