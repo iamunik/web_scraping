@@ -66,7 +66,7 @@ while c_p != page_no:
 
         driver.back()
         c_i += 1
-        if c_i == 20:
+        if c_i == page_no:
             c_i = 0
             cc = driver.find_elements(By.TAG_NAME, 'a')
             ac = [i.text for i in cc]
