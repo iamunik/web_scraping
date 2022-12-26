@@ -39,7 +39,7 @@ while c_p != quotes_no:
         description.append(desc)
         driver.back()
     driver.find_element(By.PARTIAL_LINK_TEXT, 'Next ').click()
-    if c_p == 2:
+    if c_p == quotes_no:
         break
     c_p += 1
 
