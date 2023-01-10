@@ -8,7 +8,7 @@ import pandas as pd
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 
-def stuffs():
+def stuffs():       # As the name is *stuffs* I couldn't think of a better way to do this section
     t_n = [team_name.append(i) for i in col[0:][::9]]
     y = [year.append(i) for i in col[1:][::9]]
     w = [win.append(i) for i in col[2:][::9]]
@@ -72,7 +72,9 @@ if user == 1:
     head = driver.find_elements(By.TAG_NAME, 'th')
     header = [i.text for i in head]
     scrape_all()
+    driver.close()
     print(dataframe())
+
 elif user == 2:
     driver.get("https://www.scrapethissite.com/pages/forms/")
     team = input('What team do you wish to scrape?\n-> ')
@@ -86,4 +88,5 @@ elif user == 2:
     header = [i.text for i in head]
 
     stuffs()
+    driver.close()
     print(dataframe())
