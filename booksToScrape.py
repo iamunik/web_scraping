@@ -4,20 +4,21 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import pandas as pd
 
-
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-
+# Selecting the number of pages you want to scrape
 page_no = int(input("How many pages do you wish to scrape?\n-> "))
 
-while page_no > 90:
+while page_no > 20:
     page_no = int(input("Page number selected is greater than pages existing\nTotal pages is 20\n"
                         "How many pages do you wish to scrape?\n-> "))
 
+# Setting the driver object
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.get("http://books.toscrape.com/")
 title = driver.title
 
 print(title)
 
+# Empty lists to populate the dataframe
 bookTitle = []
 price = []
 stock_status = []
@@ -66,7 +67,8 @@ while c_p != page_no:
 
         driver.back()
         c_i += 1
-        if c_i == page_no:
+
+        if c_i == 20:
             c_i = 0
             cc = driver.find_elements(By.TAG_NAME, 'a')
             ac = [i.text for i in cc]
@@ -93,8 +95,13 @@ booksToScrape = pd.DataFrame(data)
 
 print(booksToScrape)
 
-name_file = input("\nPlease note enter just the filename without the file extension\nEnter a preferred file name:\n-> ")
+name_file = input("\nPLEASE NOTE!!\nEnter just the filename without the file extension\n"
+                  "Enter a preferred file name:\n-> ")
+
+if ".csv" in name_file:
+    name_file = name_file[:-4]
 
 name_of_file = str(name_file + ".csv")
 
 booksToScrape.to_csv(name_of_file, index=False)
+print(f"{name_of_file} saved to Directory")
